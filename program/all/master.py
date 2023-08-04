@@ -50,6 +50,7 @@ def toShindan():
 # 5-2-1.ボタンを定義
 toShindan_btn = tk.Button(text="診断へ",
                           cursor="hand2",
+                          fg="black", highlightbackground="#8dcdbe",
                           command=toShindan)
 # 5-2-2.ボタンを配置
 toShindan_btn.place(x=700, y=550, anchor="nw")
@@ -138,8 +139,10 @@ def toResult():
     result_label.place(x=900/2, y=700/2, anchor="c")
     # 診断結果後、もう一度やるか終了するかのボタンを作成
     again_btn = tk.Button(text="もう一度", cursor="hand2",
+                          fg="black", highlightbackground="#8dcdbe",
                           command=again) # 9-1を参照
     quit_btn  = tk.Button(text="終了する", cursor="hand2",
+                          fg="black", highlightbackground="#8dcdbe",
                           command=end) # 9-2を参照
     # ↑のボタンを配置
     again_btn.place(x=700, y=550, anchor="nw")
@@ -147,6 +150,7 @@ def toResult():
 # 8-2.ボタンの作成・配置
 # 8-2-1.ボタンを定義
 result_btn = tk.Button(text="結果へ", cursor="hand2",
+                       fg="black", highlightbackground="#8dcdbe",
                         command=toResult # 8-1を参照
                        )
 # 8-2-2.ボタンを配置
@@ -160,8 +164,10 @@ def again():
     again_btn.place_forget()
     quit_btn.place_forget()
     result_label.place_forget()
-    # スタート画面へ
-    pass
+    # 9-1-2.診断項目（リスト）の初期化
+    question_list.clear()
+    # 9-1-3.診断画面へ
+    toShindan()
 # 9-2.「終了する」ボタンの作成
 def end():
     root.destroy()
