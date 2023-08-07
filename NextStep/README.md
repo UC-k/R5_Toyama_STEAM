@@ -22,5 +22,17 @@ import tkinter as tk
 
 
 # テキストの一部の色を変更する
-0-0. ではtkinterにおいて、tkinter.Labelを用いて文字を配置しました。<br>
-Labelでは、テキストの一部の色を変更することはできません。そこで、テキストの一部の色を変更したい場合は、EntryまたはTextを使用します。
+0-0. ではtkinterにおいて、tkinter.Labelを用いてテキストを配置しました。<br>
+しかし、Labelでは、テキストの一部のみ色を変更することはできません。（テキスト全体はできる。）<br>
+そこで、テキストの一部のみ色を変更したい場合は、EntryまたはTextを使用します。<br>
+.tag_configure()を使用して、自分の好きな色に指定してみましょう。
+```python
+import tkinter as tk
+```
+`プログラムの説明`<br>
+1. <br>
+2. <br>
+
+`解説`<br>
+1. .insert("1.0","〇〇〇〇")テキスト<br>
+2. <br>
