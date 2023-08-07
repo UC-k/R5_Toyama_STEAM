@@ -22,5 +22,5 @@ import tkinter as tk
 
 
 # テキストの一部の色を変更する
-0-0. ではtkinterにおいて、tkinter.Labelを用いて文字を配置しました。
-テキストの一部の色を変更したい場合は、tkinter.Textを用いて文字を配置します。
+0-0. ではtkinterにおいて、tkinter.Labelを用いて文字を配置しました。<br>
+Labelでは、テキストの一部の色を変更することはできません。そこで、テキストの一部の色を変更したい場合は、EntryまたはTextを使用します。
