@@ -91,12 +91,53 @@ root.mainloop()
 そこで、テキストの一部のみ色を変更したい場合は、EntryまたはTextを使用します。<br>
 .tag_configure()を使用して、自分の好きな色に指定してみましょう。
 ```python
+# 1. tkinterをインポート
 import tkinter as tk
+# 2. 画面の作成
+root = tk.Tk()
+# 3. 画面の大きさを指定
+root.geometry("300x300")
+# 4. テキスト（テキストボックス）を定義
+txt = tk.Text(width=30, height=5)
+# 5. テキスト（テキストボックス）を配置
+txt.place(x=150, y=100, anchor="c")
+# 6. 色を変更するために３色を準備
+txt.tag_configure("black", foreground="black")#黒
+txt.tag_configure("red", foreground="#FF0000")#赤
+txt.tag_configure("blue", foreground="#0000FF")#青
+# 7. テキスト（テキストボックス）に順に色を指定してテキストを追加
+txt.insert("end", "あなたの診断は", "black")
+txt.insert("end", "〇〇", "red")
+txt.insert("end", "%です", "blue")
+# 8. メインループ
+root.mainloop()
 ```
-`プログラムの説明`<br>
-1. <br>
-2. <br>
+以上のプログラムを実行すると、画面上に「あなたの診断は〇〇%です」と入力されたテキストボックスが作成されます。<br>
+このように一部の色を変更したい場合は、テキストを小分けに追加していき、タグで色を選択します。
+<div align="center">
+<img src="./mdimg/color.png" width="50%">
+</div>
 
-`解説`<br>
-1. .insert("1.0","〇〇〇〇")テキスト<br>
-2. <br>
+`プログラムの説明`<br>
+6. tag_configure("タグの名前", foreground="色を指定")でタグを準備します。<br>
+あらかじめタグを準備することで、テキストを追加する際に、色を選択することができます。<br>
+7. insert("end", "テキスト", "タグの名前")でテキストを追加します。<br>
+タグの名前を引数に入れることで、選択した色のテキストが追加されます。<br>
+
+`補足`<br>
+insert("end","〇〇〇〇")でテキストを追加してきました。<br>
+第一引数の"end"を変更すると、テキストボックス内の指定の位置にテキストを追加することができます。
+```python
+省略
+# 6. 色を変更するために３色を準備
+txt.tag_configure("black", foreground="black")#黒
+txt.tag_configure("red", foreground="#FF0000")#赤
+txt.tag_configure("blue", foreground="#0000FF")#青
+# 7. テキスト（テキストボックス）に順に色を指定してテキストを追加
+txt.insert("end", "あなたの診断は", "black")
+txt.insert("end", "〇〇", "red")
+txt.insert("end", "%です", "blue")
+txt.insert("1.0", "診断結果\n\n")
+# 8. メインループ
+root.mainloop()
+```
