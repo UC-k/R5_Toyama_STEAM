@@ -17,8 +17,11 @@ entry.place(x=150, y=150, anchor="c")
 # 6. メインループ
 root.mainloop()
 ```
-<div align="center>
-<img src="./mdimg/entry.png" width="50%>
+以上のプログラムを実行すると、画面上に1行のテキストボックスが作成されます。<br>
+テキストを入力できるので試してみてください。
+<br>
+<div align="center">
+<img src="./mdimg/entry.png" width="50%">
 </div>
 
 `プログラムの説明`<br>
@@ -42,7 +45,10 @@ txt.place(x=150, y=100, anchor="c")
 # 6. メインループ
 root.mainloop()
 ```
-<div align="center>
+以上のプログラムを実行すると、画面上に複数行のテキストボックスが作成されます。<br>
+テキストを入力できるので試してみてください。
+<br>
+<div align="center">
 <img src="./mdimg/text.png" width="50%">
 </div>
 
@@ -50,6 +56,34 @@ root.mainloop()
 4. Text(width=半角文字数, height=半角文字数)で定義します。widthは1行における文字数、heightは行数を指定します。<br>
 5. place(x="半角文字数", y="半角文字数", anchor="c")で配置します。<br>
 
+# テキスト入力欄にテキストを追加する
+0-0. ではtkinterにおいて、tkinter.Labelを用いてテキストを配置しました。<br>
+その際、Label(text="ラベルテキスト")のようにラベルを定義し、テキストを表現しました。<br>
+今回は、EntryまたはTextを使用したテキストの表現方法を紹介します。
+```python
+# 1. tkinterをインポート
+import tkinter as tk
+# 2. 画面の作成
+root = tk.Tk()
+# 3. 画面の大きさを指定
+root.geometry("300x300")
+# 4. エントリー（テキストボックス）を定義
+entry = tk.Entry(fg="grey", bg="white", font="System", width=20)
+# 5. エントリー（テキストボックス）を配置
+entry.place(x=150, y=150, anchor="c")
+# 6. エントリー（テキストボックス）にテキストを追加
+entry.insert("end", "テキストを追加")
+# 7. メインループ
+root.mainloop()
+```
+以上のプログラムを実行すると、画面上に「テキストを追加」と入力されたテキストボックスが作成されます。<br>
+このようにLabelと異なる方法でテキストを表現することができます。
+<div align="center">
+<img src="./mdimg/addtext.png" width="50%">
+</div>
+
+`プログラムの説明`<br>
+6. insert("end","テキスト")でテキストボックスにテキストを追加することができます。
 
 # テキストの一部の色を変更する
 0-0. ではtkinterにおいて、tkinter.Labelを用いてテキストを配置しました。<br>
