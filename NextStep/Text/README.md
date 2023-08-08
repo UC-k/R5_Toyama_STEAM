@@ -21,7 +21,7 @@ root.mainloop()
 テキストを入力できるので試してみてください。
 <br>
 <div align="center">
-<img src="./mdimg/entry.png" width="50%">
+<img src="../mdimg/entry.png" width="50%">
 </div>
 
 `プログラムの説明`<br>
@@ -49,7 +49,7 @@ root.mainloop()
 テキストを入力できるので試してみてください。
 <br>
 <div align="center">
-<img src="./mdimg/text.png" width="50%">
+<img src="../mdimg/text.png" width="50%">
 </div>
 
 `プログラムの説明`<br>
@@ -79,7 +79,7 @@ root.mainloop()
 以上のプログラムを実行すると、画面上に「テキストを追加」と入力されたテキストボックスが作成されます。<br>
 このようにLabelと異なる方法でテキストを表現することができます。
 <div align="center">
-<img src="./mdimg/addtext.png" width="50%">
+<img src="../mdimg/addtext.png" width="50%">
 </div>
 
 `プログラムの説明`<br>
@@ -115,7 +115,7 @@ root.mainloop()
 以上のプログラムを実行すると、画面上に「あなたの診断は〇〇%です」と入力されたテキストボックスが作成されます。<br>
 このように一部の色を変更したい場合は、テキストを小分けに追加していき、タグで色を選択します。
 <div align="center">
-<img src="./mdimg/color.png" width="50%">
+<img src="../mdimg/color.png" width="50%">
 </div>
 
 `プログラムの説明`<br>
@@ -144,14 +144,14 @@ root.mainloop()
 ```
 以上のプログラムを実行すると、一つ前のコードに比べ、「診断結果」と1行目に追記されたテキストボックスが作成されます。<br>
 <div align="center">
-<img src="./mdimg/insert.png" width="50%">
+<img src="../mdimg/insert.png" width="50%">
 </div>
 
 `プログラムの説明`<br>
 7. insert("1.0","テキスト")でテキストボックスの先頭にテキストを追加できる。<br>
 図で説明すると
 <div align="center">
-<img src="./mdimg/image.png" width="80%">
+<img src="../mdimg/image.png" width="80%">
 </div>
 
 `補足`<br>
