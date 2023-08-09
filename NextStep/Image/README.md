@@ -70,6 +70,8 @@ cvs.create_image(0, 0, anchor="nw", image=img, tag="start_image")
 # 10. メインループ
 root.mainloop()
 ```
+以上のプログラムを実行すると、スタート画面の画像が、保存した画像に変更されます。<br>
+画像が反映されているか確認してみましょう。
 <div align="center">
   <img src="../mdimg/img6.png" width="50%">
 </div>
@@ -78,5 +80,12 @@ root.mainloop()
 8. 使用する画像を定義において、「file="./mdimg/image.png"」から「file="./smartphone.png"」に変更しました。<br>
 ここでは、先ほど準備した画像を読み込むために、保存した場所（階層）とファイル名を指定しています。
 
+`よくあるエラー文`
+
+```python
+TelError: could't open "./xxxxxx.png": no such file or directory
+```
+このエラー文が出た場合、指定した画像のファイルが見つからず、階層が間違っていることを意味しています。<br>
+一度、保存した画像のファイルと、診断アプリのpythonのファイルの保存場所が同じ階層にあるか確かめてみましょう。
 
 
