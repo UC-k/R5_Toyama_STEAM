@@ -209,7 +209,7 @@ cvs = tk.Canvas(root, width=900, height=700)
 cvs.pack()
 # ----------------------------------------
 # 8. 使用する画像を定義
-img = tk.PhotoImage(file="./mdimg/image.png")
+img = tk.PhotoImage(file="./image.png")
 # 9. 画像をキャンバスに配置
 cvs.create_image(0, 0, anchor="nw", image=img, tag="start_image")
 # ----------------------------------------
@@ -275,7 +275,7 @@ cvs = tk.Canvas(root, width=900, height=700)
 cvs.pack()
 # ----------------------------------------
 # 8. 使用する画像を定義
-img = tk.PhotoImage(file="./mdimg/image.png")
+img = tk.PhotoImage(file="./image.png")
 # 9. 画像をキャンバスに配置
 cvs.create_image(0, 0, anchor="nw", image=img, tag="start_image")
 # ----------------------------------------
@@ -395,7 +395,7 @@ cvs = tk.Canvas(root, width=900, height=700)
 cvs.pack()
 # ----------------------------------------
 # 8. 使用する画像を定義
-img = tk.PhotoImage(file="./mdimg/image.png")
+img = tk.PhotoImage(file="./image.png")
 # 9. 画像をキャンバスに配置
 cvs.create_image(0, 0, anchor="nw", image=img, tag="start_image")
 # ----------------------------------------
@@ -859,7 +859,7 @@ cvs.pack()
 # 3. キャンバスに画像を配置
 # ----------------------------------------
 # 3-1. 使用する画像を定義
-img = tk.PhotoImage(file="./mdimg/image.png")
+img = tk.PhotoImage(file="./image.png")
 # 3-2 .画像をキャンバスに配置
 cvs.create_image(0, 0, anchor="nw", image=img, tag="start_image")
 # ----------------------------------------
@@ -1120,7 +1120,7 @@ cvs.pack()
 
 
 # ---------- 4. ウィジェットの作成
-img = tk.PhotoImage(file="./mdimg/image.png")
+img = tk.PhotoImage(file="./image.png")
 title_label = tk.Label(text="○○診断",
                        fg="white", bg="#8dcdbe",
                        font=("游ゴシック", 50))
