@@ -70,4 +70,13 @@ cvs.create_image(0, 0, anchor="nw", image=img, tag="start_image")
 # 10. メインループ
 root.mainloop()
 ```
+<div align="center">
+  <img src="./mdimg/img6.png" width=70%>
+</div>
+
+`プログラムの変更箇所`<br>
+8. 使用する画像を定義において、「file="./mdimg/image.png"」から「file="./smartphone.png"」に変更しました。<br>
+ここでは、先ほど準備した画像を読み込むために、保存した場所（階層）とファイル名を指定しています。
+
+
 
