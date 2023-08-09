@@ -107,10 +107,10 @@ root.mainloop()
 
 <br>
 
-<div align="center">
-<img src="./mdimg/screen.png" width="20%">
-<span style="color:red">→</span>
-<img src="./mdimg/screen.png" width="20%">
+<div style="display: flex; justify-content: center; align-items: center;">
+   <img src="./mdimg/screen.png" width="30%">
+   あ→
+   <img src="./mdimg/screen.png" width="30%">
 </div>
 
 <br>
