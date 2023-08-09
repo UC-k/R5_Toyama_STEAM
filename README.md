@@ -108,7 +108,9 @@ root.mainloop()
 <br>
 
 <div align="center">
-<img src="./mdimg/screen.png" width="50%">
+<img src="./mdimg/screen.png" width="20%">
+<span style="color:red">→</span>
+<img src="./mdimg/screen.png" width="20%">
 </div>
 
 <br>
