@@ -107,10 +107,8 @@ root.mainloop()
 
 <br>
 
-<div style="display: flex; justify-content: center; align-items: center;">
-   <img src="./mdimg/screen.png" width="30%">
-   あ→
-   <img src="./mdimg/screen.png" width="30%">
+<div align="center">
+<img src="./mdimg/1.png" width="50%">
 </div>
 
 <br>
@@ -186,8 +184,10 @@ cvs.create_image(0, 0, anchor="nw", image=img, tag="start_image")
 
 <br>
 
-<!-- Windowsでのファイルの参照画像を入れる -->
-### 画像
+<div align="center">
+<img src="./mdimg/2.png" width="50%">
+</div>
+
 
 <br>
 
@@ -221,8 +221,10 @@ root.mainloop()
 
 <br>
 
-<!-- ここで上のコードの実行画面のスクショを入れる -->
-### 画像
+<div align="center">
+<img src="./mdimg/3.png" width="50%">
+</div>
+
 
 <br>
 
@@ -295,8 +297,10 @@ root.mainloop()
 
 <br>
 
-<!-- ここで上のコードの実行画面のスクショを入れる -->
-### 画像
+<div align="center">
+<img src="./mdimg/4.png" width="50%">
+</div>
+
 
 <br>
 
@@ -425,8 +429,10 @@ root.mainloop()
 ```
 <br>
 
-<!-- ここで上のコードの実行画面のスクショを入れる -->
-### 画像
+<div align="center">
+<img src="./mdimg/5.png" width="50%">
+</div>
+
 
 <br>
 
@@ -483,8 +489,10 @@ root.mainloop()
 
 <br>
 
-<!-- ここで上のコードの実行画面のスクショを入れる -->
-### 画像
+<div align="center">
+<img src="./mdimg/6.png" width="50%">
+</div>
+
 
 <br>
 
@@ -546,8 +554,10 @@ root.mainloop()
 
 <br>
 
-<!-- ここで上のコードの実行画面のスクショを入れる -->
-### 画像
+<div align="center">
+<img src="./mdimg/7.png" width="50%">
+</div>
+
 
 <br>
 
@@ -635,8 +645,10 @@ root.mainloop()
 
 <br>
 
-<!-- ここで上のコードの実行画面のスクショを入れる -->
-### 画像
+<div align="center">
+<img src="./mdimg/8.png" width="50%">
+</div>
+
 
 <br>
 
@@ -728,8 +740,10 @@ root.mainloop()
 
 <br>
 
-<!-- ここで上のコードの実行画面のスクショを入れる -->
-### 画像
+<div align="center">
+<img src="./mdimg/9.png" width="50%">
+</div>
+
 
 <br>
 
@@ -1018,8 +1032,12 @@ root.mainloop()
 
 <br>
 
-<!-- ここでgif画像を挿入 -->
-### gif画像
+<div align="center">
+<img src="./mdimg/10.png" width="30%">
+<img src="./mdimg/11.png" width="30%">
+<img src="./mdimg/12.png" width="30%">
+</div>
+
 
 <br>
 
