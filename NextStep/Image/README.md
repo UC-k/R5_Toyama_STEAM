@@ -41,7 +41,7 @@
 </div>
 <br>
 
-# コードの確認
+# コードの確認と編集
 
 今回は、[3-3. キャンバスに画像を配置するまでの流れ](https://github.com/UC-k/R5_Toyama_STEAM/tree/main#3-3-%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%E3%81%AB%E7%94%BB%E5%83%8F%E3%82%92%E9%85%8D%E7%BD%AE%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E6%B5%81%E3%82%8C)
 のコードを応用していきます。（ウィンドウとキャンバスのサイズを600×600に変更してあります。）
@@ -71,7 +71,7 @@ cvs.create_image(0, 0, anchor="nw", image=img, tag="start_image")
 root.mainloop()
 ```
 <div align="center">
-  <img src="./mdimg/img6.png" width=70%>
+  <img src="../mdimg/img6.png" width="50%">
 </div>
 
 `プログラムの変更箇所`<br>
