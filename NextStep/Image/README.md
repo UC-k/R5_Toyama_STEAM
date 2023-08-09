@@ -44,3 +44,30 @@
 # コードの確認
 
 今回のコードは、[3-3. キャンバスに画像を配置するまでの流れ](https://github.com/UC-k/R5_Toyama_STEAM/tree/main#3-3-%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%E3%81%AB%E7%94%BB%E5%83%8F%E3%82%92%E9%85%8D%E7%BD%AE%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E6%B5%81%E3%82%8C)
+のコードを応用していきます。（ウィンドウとキャンバスのサイズを600×600に変更してあります。）
+```python
+# 1. tkinterをインポート
+import tkinter as tk
+# 2. 画面の作成
+root = tk.Tk()
+# 3. タイトルを作成
+root.title("○○診断")
+# 4. 画面の大きさを指定
+root.geometry("600x600")
+# 5. 画面を拡大・縮小できないように設定
+root.resizable(False, False)
+# ----------------------------------------
+# 6. キャンバスを定義
+cvs = tk.Canvas(root, width=600, height=600)
+# 7. キャンバスを配置
+cvs.pack()
+# ----------------------------------------
+# 8. 使用する画像を定義
+img = tk.PhotoImage(file="./smartphone.png")
+# 9. 画像をキャンバスに配置
+cvs.create_image(0, 0, anchor="nw", image=img, tag="start_image")
+# ----------------------------------------
+# 10. メインループ
+root.mainloop()
+```
+
