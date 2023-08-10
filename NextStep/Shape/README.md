@@ -229,10 +229,10 @@ def start():
     # ロード中のサークル描画
     # 11. 円弧をキャンバスに配置
     cvs.create_arc(100, 100, 500, 500, width=8, style=tk.ARC, outline="#01FACA",
-            start=90, extent=bar1, tag="load")
+            start=90, extent=bar1)
     # 12. 円弧をキャンバスに配置
     cvs.create_arc(100, 100, 500, 500, width=8, style=tk.ARC, outline="#01FACA",
-            start=270, extent=bar2, tag="load")
+            start=270, extent=bar2)
     # 13. キャンバスに描画されない場合の対処
     cvs.update()
     # 円を徐々に描写するために変数を変化させる
