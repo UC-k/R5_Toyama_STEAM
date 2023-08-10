@@ -86,7 +86,7 @@ root.mainloop()
 
 <br>
 
-# ロード画面を作成する
+# ロード画面(デモ)
 
 <div align="center">
     <img src="../mdimg/after.gif">
@@ -133,7 +133,8 @@ root.mainloop()
 ```
 以上のプログラムを実行すると、ボタンのクリックで、テキストが0％から100％まで変化（1秒あたり10%）することがわかります。
 
-<div>
+<div align="center">
+    <img src="../mdimg/shape56.png" width=70%>
 </div>
 
 **`プログラムの説明`**
@@ -148,49 +149,126 @@ config()について分からない場合は[こちら](../Event)をみてみま
 
 <br>
 
+# キャンバスの図形描画(円弧)について
+上記にある、キャンバスの図形描画の例に戻りましょう。<br>
+円弧は、create_arcを使用して描画できます。扇形の図形を描くイメージです。
+
+```
+create_arc(x1, y1, x2, y2, style, outline, start, extent, 横幅)　で定義します。
+```
+
+**コード**
+
 ```python
+# 1. tkinterをインポート
 import tkinter as tk
+# 2. 画面の作成
+root = tk.Tk()
+# 3. キャンバスを定義
+cvs = tk.Canvas(root, width=600, height=600, bg="white")
+# 4. キャンバスを配置
+cvs.pack()
+# 5. 円弧をキャンバスに配置
+cvs.create_arc(100, 100, 500, 500, style=tk.ARC, outline="blue",
+                    start=30, extent=120, width=8)
+# 6. 円弧をキャンバスに配置
+cvs.create_arc(100, 100, 500, 500, style=tk.ARC, outline="red",
+                    start=180, extent=90, width=8)
+# 7. メインループ
+root.mainloop()
+```
+
+<div align="center">
+    <img src="../mdimg/shape4.png" width="50%">
+</div>
+
+<br>
+
+**`プログラムの説明`**
+> 5. 円弧のオブション引数は、 create_rectangle（x1, y1, x2, y2, style, outline, start, extent, 横幅）となる。<br>
+今回は、create_rectangle(100, 100, 500, 500, style=円弧, 色=青, 始めの位置=30度, 描く範囲=120度, 幅=8)である。<br>
+座標 (x1, y1) を左上、座標 (x2, y2) を右下とした矩形の中に楕円が描画されるイメージです。<br>
+
+> 6. 円弧のオブション引数は、 create_rectangle（x1, y1, x2, y2, style, outline, start, extent, 横幅）となる。<br>
+今回は、create_rectangle(100, 100, 500, 500, style=円弧, 色=赤, 始めの位置=180度, 描く範囲=90度, 幅=8)である。<br>
+
+**`注意点`**
+- **描く範囲は、反時計回りに角度で指定します。**
+
+<br>
+
+# ロード画面を作成する
+では、afterと円弧を組み合わせてロード画面を作成していきましょう。
+
+```python
+# 1. tkinterをインポート
+import tkinter as tk
+# 2. mathをインポート
 import math
-# ------------------------------------------------------------------------------
+# 3. 変数を定義
 bar1 = 0
+# 4. 変数を定義
 bar2 = 0
+# 5. 変数を定義
 load = 0
 # ------------------------------------------------------------------------------
+# 6. 関数を定義 
 def start():
     global bar1, bar2, load
+    # 中心にパーセントを表示
+    # 7. もし変数が１００より小さいならば
+    if load < 100:
+        # 8. 変数に1.38を加算
+        load += 1.38
+    # 9. もし変数が１００より大きいならば
+    elif load > 100:
+        # 10. 変数を１００に定義
+        load = 100
+    # 10. テキストのオプション変数を変更
+    load_txt.config(text=str(math.floor(load))+"%")
     # ロード中のサークル描画
+    # 11. 円弧をキャンバスに配置
     cvs.create_arc(100, 100, 500, 500, width=8, style=tk.ARC, outline="#01FACA",
             start=90, extent=bar1, tag="load")
+    # 12. 円弧をキャンバスに配置
     cvs.create_arc(100, 100, 500, 500, width=8, style=tk.ARC, outline="#01FACA",
             start=270, extent=bar2, tag="load")
+    # 13. キャンバスに描画されない場合の対処
     cvs.update()
-    # 中心にパーセントを表示
-    if load < 100:
-        load += 1.38
-    elif load > 100:
-        load = 100
-    load_txt.config(text=str(math.floor(load))+"%")
-    # 円を徐々に描写
+    # 円を徐々に描写するために変数を変化させる
+    # 14. もし変数が-180以上ならば
     if bar2 >= -180:
+        # 15. もし変数が-180以上ならば
         if bar1 >= -180:
+            # 16. 変数に5を減算
             bar1 -= 5
+        # 17. もし変数が-180より小さいならば
         elif bar1 < -180:
+            # 18. 変数に５を減算
             bar2 -= 5
+        # 18. 0.001秒後に関数「start」を実行
         root.after(1, start)
 # ------------------------------------------------------------------------------
+# 19. 画面の作成
 root = tk.Tk()
-root.title("Python習熟度診断アプリ")
-root.geometry("600x600+300+100")
+# 20. 画面の大きさを指定
+root.geometry("600x600")
+# 21. 画面を固定
 root.resizable(False, False)
 # ------------------------------------------------------------------------------
+# 22. キャンバスを定義
 cvs = tk.Canvas(root, width=600, height=600, bg="#323232")
+# 23. キャンバスを配置
 cvs.pack()
 # ------------------------------------------------------------------------------
+# 24. ラベル（テキスト）を定義
 load_txt = tk.Label(text="0%", font=("DSEG7 Classic", 30),
                     fg="#01FACA", bg="#323232")
+# 25. ラベル（テキスト）を配置
 load_txt.place(x=300, y=300, anchor="c")
-
+# 26. 関数「start」を実行
 start()
+# 27. メインループ
 root.mainloop()
 ```
 
