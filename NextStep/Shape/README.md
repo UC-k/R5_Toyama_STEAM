@@ -14,8 +14,8 @@ img = tk.PhotoImage(file="./image.png")
 # 4 .画像をキャンバスに配置
 cvs.create_image(0, 0, anchor="nw", image=img, tag="start_image")
 ```
-以上のように、キャンバスはCanvas()で定義し、pack()で配置することができます。<br>
-また、キャンバス上には、create_img()で画像を配置することができます。<br>
+以上のように、キャンバスはCanvas()で定義し、pack()で配置することができました。<br>
+また、キャンバス上には、create_img()で画像を配置することができました。<br>
 **同様にして、キャンバス上には、create_xxxで図形を配置することができます。**
 
 <br>
