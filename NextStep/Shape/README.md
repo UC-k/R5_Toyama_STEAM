@@ -271,4 +271,4 @@ start()
 # 27. メインループ
 root.mainloop()
 ```
-
+以上のプログラムを実行すると、[ロード画面（デモ）](https://github.com/UC-k/R5_Toyama_STEAM/blob/main/NextStep/Shape/README.md#%E3%83%AD%E3%83%BC%E3%83%89%E7%94%BB%E9%9D%A2%E3%83%87%E3%83%A2)
