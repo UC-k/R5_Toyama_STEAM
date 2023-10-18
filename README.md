@@ -10,6 +10,11 @@
 
 <br>
 
+## サンプルgif画像
+![1](https://github.com/UC-k/R5_Toyama_STEAM/blob/main/mdimg/sample.gif)
+
+<br>
+
 ## 目次
 
 <details><summary>クリックで表示・非表示の切り替え</summary>
