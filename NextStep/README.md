@@ -28,7 +28,9 @@
 ## 昨年度のサンプルアプリ
 
 ![1](https://github.com/UC-k/R5_Toyama_STEAM/blob/main/NextStep/GIF/1.gif)
+<br>
 ![2](https://github.com/UC-k/R5_Toyama_STEAM/blob/main/NextStep/GIF/2.gif)
+<br>
 ![3](https://github.com/UC-k/R5_Toyama_STEAM/blob/main/NextStep/GIF/3.gif)
 
 ---
