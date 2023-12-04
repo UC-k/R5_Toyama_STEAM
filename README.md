@@ -10,6 +10,12 @@
 
 <br>
 
+## 発展編について
+オリジナルの診断アプリ作成において、さらに発展したプログラムに挑戦したい方は以下のリンクを参考にしてください。<br>
+[オリジナル診断アプリ_発展編](https://github.com/UC-k/R5_Toyama_STEAM/tree/main/NextStep)
+
+<br>
+
 ## サンプルgif画像
 ![1](https://github.com/UC-k/R5_Toyama_STEAM/blob/main/mdimg/sample.gif)
 
