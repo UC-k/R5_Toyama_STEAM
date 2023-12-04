@@ -40,3 +40,4 @@
 - ### [チェックボタンのチェックの有無でテキストを表示・非表示にする_サンプルコード](https://github.com/UC-k/Python_App/blob/main/question/hide.py)
 - ### [トーナメント型の分岐を増やす_サンプルコード](https://github.com/UC-k/Python_App/blob/main/question/tournament.py)
 - ### 結果で表示する画像を分岐で変更したい [（コード）](https://github.com/UC-k/Python_App/tree/main/question/tbi.py)[（画像）](https://github.com/UC-k/Python_App/tree/main/question/branch_img)
+  →コードと画像の両方をダウンロードして実行してください。
