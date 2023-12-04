@@ -13,15 +13,16 @@
 
 ---
 
-### 分岐
+## 分岐
 診断アプリの質問項目において分岐する方法を載せます。<br>
+図で流れを確認して、コードを適宜変更して使用してください。<br>
 
-### [分岐１（トーナメント型）](https://github.com/UC-k/Python_App/blob/main/branch.py)
 ### [分岐１（トーナメント型_図）](https://github.com/UC-k/Python_App/blob/main/branch1.png)
-### [分岐２（リーグ型）](https://github.com/UC-k/Python_App/blob/main/count.py)
+### [分岐１（トーナメント型_コード）](https://github.com/UC-k/Python_App/blob/main/branch.py)
 ### [分岐２（リーグ型_図）](https://github.com/UC-k/Python_App/blob/main/branch2.png)
-### [ロード画面](https://github.com/UC-k/Python_App/blob/main/question/shindan.py)
+### [分岐２（リーグ型）_コード](https://github.com/UC-k/Python_App/blob/main/count.py)
+### [ロード画面_コードのみ](https://github.com/UC-k/Python_App/blob/main/question/shindan.py)
 
 ---
 
-### 昨年度のサンプルアプリ
+## 昨年度のサンプルアプリ
