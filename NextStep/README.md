@@ -31,11 +31,12 @@
 ---
 
 ## その他
+サンプルコードはプログラムファイルをダウンロードして、お手持ちのタブレットで実際に実行してみてください。<br>
 
 - ### [Spyderを日本語化する方法](https://github.com/UC-k/Python_App/blob/main/japanese.md)
 - ### [役に立つ付録](https://github.com/UC-k/Python_App/blob/main/tool.md)
 - ### [ウィジェットの削除方法](https://github.com/UC-k/Python_App/blob/main/wgt.md)
-- ### [ラジオボタンの選択肢の変更と比重の変更](https://github.com/UC-k/Python_App/blob/main/question/select.py)
-- ### [チェックボタンのチェックの有無でテキストを表示・非表示にする](https://github.com/UC-k/Python_App/blob/main/question/hide.py)
-- ### [トーナメント型の分岐を増やす](https://github.com/UC-k/Python_App/blob/main/question/tournament.py)
+- ### [ラジオボタンの選択肢の変更と比重の変更_サンプルコード](https://github.com/UC-k/Python_App/blob/main/question/select.py)
+- ### [チェックボタンのチェックの有無でテキストを表示・非表示にする_サンプルコード](https://github.com/UC-k/Python_App/blob/main/question/hide.py)
+- ### [トーナメント型の分岐を増やす_サンプルコード](https://github.com/UC-k/Python_App/blob/main/question/tournament.py)
 - ### 結果で表示する画像を分岐で変更したい [（コード）](https://github.com/UC-k/Python_App/tree/main/question/tbi.py)[（画像）](https://github.com/UC-k/Python_App/tree/main/question/branch_img)
