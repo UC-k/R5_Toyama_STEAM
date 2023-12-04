@@ -23,3 +23,5 @@
 ### [ロード画面](https://github.com/UC-k/Python_App/blob/main/question/shindan.py)
 
 ---
+
+### 昨年度のサンプルアプリ
